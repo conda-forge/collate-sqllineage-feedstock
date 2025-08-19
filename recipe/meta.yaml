@@ -1,5 +1,5 @@
 {% set name = "collate-sqllineage" %}
-{% set version = "1.6.19" %}
+{% set version = "1.6.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/collate_sqllineage-{{ version }}.tar.gz
-  sha256: dfcb987c7ae33a5efe81bdb23d580072ea6981cfc051117ad4b38296c0659004
+  sha256: 9550975d05907992c2aafbe3b64ce66c64709942bfeffafc976778098af956ce
 
 build:
   entry_points:
