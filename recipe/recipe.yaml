@@ -37,7 +37,8 @@ tests:
       imports:
         - collate_sqllineage
       python_version: ${{ python_min }}.*
-      pip_check: true
+      pip_check: false
+      # │ collate-sqllineage 1.6.21 requires collate-sqlfluff, which is not installed.
   - requirements:
       run:
         - python ${{ python_min }}.*
