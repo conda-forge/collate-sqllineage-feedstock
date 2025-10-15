@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: collate-sqllineage
-  version: "1.6.21"
+  version: "1.6.22"
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/collate_sqllineage-${{ version }}.tar.gz
-  sha256: f4239dc8d7b8f287bab00ba2eb582d364c1e2d26ce94e5ae9a75b39361087b69
+  sha256: 79ee8a1efac0857b910815b4c307efd49a9085a04b37418462d55eee1034f364
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
