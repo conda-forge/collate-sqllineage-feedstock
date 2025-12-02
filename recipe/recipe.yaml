@@ -28,7 +28,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }},<4.0
-    - sqlparse >=0.5,<0.6
+    - sqlparse ==0.5.3
     - networkx >=2.4
     - collate-sqlfluff ==3.3.5
     #- sqlfluff >=3.0.0,<3.1.0
