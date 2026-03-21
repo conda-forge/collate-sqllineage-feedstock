@@ -30,8 +30,8 @@ requirements:
     - python >=${{ python_min }},<4.0
     - sqlparse ==0.5.3
     - networkx >=2.4
-    - collate-sqlfluff >=3.3,<4.dev0
-    - sqlglot >=27.29,<28.dev0
+    - collate-sqlfluff ==3.5.0
+    - sqlglot ==29.0.1
 tests:
   - python:
       imports:
