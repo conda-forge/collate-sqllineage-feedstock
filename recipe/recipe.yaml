@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: collate-sqllineage
-  version: 2.0.2
+  version: "2.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/collate_sqllineage-${{ version }}.tar.gz
-  sha256: c036f5a5b9f27cf3eafa65b944e9afecc278da5104d1253d51214177c8e43846
+  sha256: a1dd9a818bf978e1f1267e1f8a16ae1f209f66701ff8e70da461138b5d328190
 
 build:
   number: 0
@@ -30,8 +30,8 @@ requirements:
     - python >=${{ python_min }},<4.0
     - sqlparse ==0.5.3
     - networkx >=2.4
-    - collate-sqlfluff >=3.3,<4.dev0
-    - sqlglot >=27.29,<28.dev0
+    - collate-sqlfluff ==3.5.0
+    - sqlglot ==29.0.1
 tests:
   - python:
       imports:
