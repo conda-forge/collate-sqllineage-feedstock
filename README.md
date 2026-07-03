@@ -3,20 +3,33 @@ About collate-sqllineage-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/collate-sqllineage-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/reata/sqllineage
+Home: https://pypi.org/project/collate-sqllineage/
 
 Package license: MIT
 
 Summary: Collate SQL Lineage for Analysis Tool powered by Python and sqlfluff based on sqllineage.
 
+Development: https://github.com/open-metadata/openmetadata-sqllineage
+
+Documentation: https://github.com/open-metadata/openmetadata-sqllineage#readme
+
+collate-sqllineage is the OpenMetadata/Collate community fork of sqllineage,
+a SQL lineage analysis tool powered by Python. Given a SQL command it reports
+the source and target tables (and column-level lineage) without exposing the
+underlying parser tokens. The fork swaps in sqlfluff as the parsing backend
+(in addition to sqlparse) and is the lineage engine consumed by OpenMetadata.
+The original upstream project lives at https://github.com/reata/sqllineage
+with documentation at https://sqllineage.readthedocs.io.
+
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23975&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/collate-sqllineage-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/collate-sqllineage-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/collate-sqllineage-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
